@@ -4,7 +4,7 @@
 Si estas leyendo este README.md es porque un alumno le compartió desde GITHUB un [Archivo en formato .ZIP con el contenido del proyecto integrador](https://github.com/ClaudioPiazze/Proyecto_Integrador_2). 
 
 En el marco de la cursada de la [Diplomatura en Programación WEB Backend](http://cuch.gob.ar/desarrollador-web-full-stack/), 
-dictada en modalidad Virtual y Presencial por la [Uiversidad Nacional de 3 de Fefrero (UNTREF)](https://www.untref.edu.ar/) se presenta el segundo trabajo integrador correspondente a lo aprendido en lo que va del segundo cuatrimestre de 2023, donde se deberás desarrollar una aplicación integrando al proyecto Node.js Express, Sequelize y MySQL.
+dictada en modalidad Virtual y Presencial por la [Uiversidad Nacional de 3 de Fefrero (UNTREF)](https://www.untref.edu.ar/) se presenta el segundo trabajo integrador correspondente a lo aprendido en lo que va del segundo cuatrimestre de 2023, donde se deberás desarrollar una aplicación integrando al proyecto *Node.js* *Express*, *Sequelize* y *MySQL*.
 
 ## Objetivo
 El _objetivo de este desarrollo_ es demostrar a través de un trabajo integrador los diferentes temas aprendidos y tener la experiencia de poder desarrollar forma individual para llegar al objetivo propuesto por la cátedra.
@@ -15,6 +15,18 @@ El _objetivo de este desarrollo_ es demostrar a través de un trabajo integrador
 |--------------|--------------|
 | TrailerFlix.json  | 🎦 Catalogo de Péliculas y Series   |
 	
+## El proyecto debe incluir:
+1. Desarrollo de una bb.dd MySQL con el modelo relacional aplicado de acuerdo a la información almacenada en trailerflix.json
+   
+	a. catalogos (almacenar datos de películas y series)
+	b. categorias (serie, película, documental, etc...)
+	c. actores (datos de actrices y actores reparto)
+	d. genero (Acción, Drama, Terror, Comedia)
+	e. N tablas intermedias (catalogo_reparto, catalogo_actrores)
+
+### Se crear el modelo relacional de la bb.dd. y las diferentes tablas, y luego exportar el código a .SQL para poder crear la bb.dd., tablas y relaciones.
+
+
 
 ## Receta:
 Para poder hacer funcionar al proyecto debera realizar los siguiente _pasos_:
@@ -41,17 +53,15 @@ Por linea de comandos realizar los siguientes pasos:
 1. Buscar la creación de la constante 'mibd' en la linea 7 del archivo 'server.js' y cambiar su contenido por el nombre de su base de datos
 2. En la linea 8 del mismo archivo esta la declaración de la constante 'micoll' la que debera ser modificada con el nombre que le asignara a su coleccion
 
-## ¿Quienes son los integrantes del grupo 3?
+## ¿Quienes es el integrantes?
 
 | Apellido y Nombre  |
 |--------------|
-| - [Ardura, Gabriela ](https://github.com/Gabi2277)|
-| - [Lamenza, Gabriel ](https://github.com/GaOsLa)  |
 | - [Piazze, Claudio ](https://github.com/ClaudioPiazze/)|
 _Link GitHub_
 
-## Canal Discord del Grupo 3️⃣
-En este **[canal](https://discord.com/channels/1125929860309713000/1126640148684230798)** compartimos las dudas, afianzamos las soluciones, nos repatimos tareas, consolidamos acuerdos. Con mucha concentración, risas y desenfados. Conteniendonos mutuamente y llegando al objetivo! :smiley:
+## Canal Discord de la Diplomatura Chivilcoy Backend
+En este **[canal](https://discord.com/channels/1041764377386287134/1096437854118359050)** compartimos las dudas, y material de la cursada :smiley:
 
 ## ¿Como se compone la Creación, Lectura, Actualizacion y Borrado de uno o varias prendas? 🩳
 Leer el siguiente apartado: [CRUD y Control De Errores](./CRUD_ControlDeErrores.md)  
