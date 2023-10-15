@@ -53,15 +53,16 @@ Por linea de comandos realizar los siguientes pasos:
 1. Buscar la creación de la constante 'mibd' en la linea 7 del archivo 'server.js' y cambiar su contenido por el nombre de su base de datos
 2. En la linea 8 del mismo archivo esta la declaración de la constante 'micoll' la que debera ser modificada con el nombre que le asignara a su coleccion
 
-## ¿Quienes es el integrantes?
 
-| Apellido y Nombre  |
-|--------------|
-| - [Piazze, Claudio ](https://github.com/ClaudioPiazze/)|
-_Link GitHub_
 
 ## Canal Discord de la Diplomatura Chivilcoy Backend
 En este **[canal](https://discord.com/channels/1041764377386287134/1096437854118359050)** compartimos las dudas, y material de la cursada :smiley:
 
-## ¿Como se compone la Creación, Lectura, Actualizacion y Borrado de uno o varias prendas? 🩳
-Leer el siguiente apartado: [CRUD y Control De Errores](./CRUD_ControlDeErrores.md)  
+## ¿Como se compone la Creación, Lectura, Actualizacion y Borrado de una categoria? 
+Leer el siguiente apartado: [CRUD y Control De Errores](./CRUD_Categorias.md)  
+
+## Alumnno:
+| Apellido y Nombre  | E-mail |
+|-------------|--------------|
+| - [Piazze, Claudio ](https://github.com/ClaudioPiazze/)| cpiazze@hotmail.com |
+_Link GitHub_
