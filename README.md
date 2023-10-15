@@ -23,7 +23,7 @@ El _objetivo de este desarrollo_ es demostrar a través de un trabajo integrador
 	-  generos (Acción, Drama, Terror, Comedia)
 	-  2 tablas intermedias (catalogos_repartos, catalogos_actrores)
 
-Se crea un modelo relacional de la bb.dd. y las diferentes tablas, y luego exportar el código a .SQL para poder crear la bb.dd., tablas y relaciones.
+Se crea en un modelo relacional de la bb.dd. y las diferentes tablas
 
 ### Modelo Entidades - Relaciones - Atributos 
 
@@ -39,13 +39,38 @@ utilizando la herramienta https://erd.dbdesigner.net/designer/schema/1696715970-
 
 ![imagen TrilerFlix.png](./trilerflix.png)
 
+luego exporto el código a .SQL para poder crear la bb.dd., tablas y relaciones.
+
+Para la realización del SCRIPT de insersión de datos en las diferentes tablas en MySQL, utilicé las herramienta de IA CHAT-GPT que ayuda a crear los Insert según los datos extraidos del archivo JSON y la ayuda del la herramienta de conversión de formatos (https://conversiontools.io/convert/json-to-excel)  para llevarlo de .JSON a Excel y trabajar los datos de  generos, actores y actrices de reparto.
+
 # API con Node.js, Express y Sequelize
 
 Esta es una API de ejemplo que utiliza Node.js, Express y Sequelize para gestionar categorías de peliculas/ series y visualizar el catalogo de peliculas segun diferentes criterios .
 
-Para la realizacion del SCRIPTS de inserción de datos en las diferentes tablas en MYSQL, utilice las herramienta de IA  CHAT-GPT que ayuda a crear los Insert segun los datos extraidos del archivo JSON.
-
 A continuación, encontrarás la documentación para utilizar esta API.
+
+## Requisitos Previos
+
+Asegúrate de tener Node.js y MySQL instalados en tu sistema antes de ejecutar la aplicación. Además, crea una base de datos MySQL y configura las credenciales en un archivo `.env` en la raíz del proyecto como se muestra en el siguiente ejemplo.
+
+## Archivo `.env`
+
+### Configuración de la base de datos
+```plaintext
+DB_HOST=localhost
+DB_PORT=3000
+DB_NAME=TrailerFlix
+DB_USER=root
+DB_PASSWORD=123456
+```
+## Instalación
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/ClaudioPiazze/Proyecto_Integrador_2/
+   ```
+
 
 ## Receta:
 Para poder hacer funcionar al proyecto debera realizar los siguiente _pasos_:
