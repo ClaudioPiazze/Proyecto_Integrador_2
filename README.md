@@ -45,13 +45,13 @@ Para la realización del SCRIPT de insersión de datos en las diferentes tablas 
 
 # API con Node.js, Express y Sequelize
 
-Esta es una API de ejemplo que utiliza Node.js, Express y Sequelize para gestionar categorías de peliculas/ series y visualizar el catalogo de peliculas segun diferentes criterios .
+Esta es la API que utiliza Node.js, Express y Sequelize para gestionar categorías de peliculas/series y visualizar el catálogo de peliculas según diferentes criteriosde busqueda.
 
 A continuación, encontrarás la documentación para utilizar esta API.
 
 ## Requisitos Previos
 
-Asegúrate de tener Node.js y MySQL instalados en tu sistema antes de ejecutar la aplicación. Además, crea una base de datos MySQL y configura las credenciales en un archivo `.env` en la raíz del proyecto como se muestra en el siguiente ejemplo.
+Asegúrase de tener Node.js y MySQL instalados en tu sistema antes de ejecutar la aplicación. Además, crea una base de datos MySQL a traves del SCRIPT y configura las credenciales en un archivo `.env` en la raíz del proyecto como se muestra en el siguiente ejemplo.
 
 ## Archivo `.env`
 
