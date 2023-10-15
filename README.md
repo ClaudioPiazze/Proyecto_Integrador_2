@@ -33,11 +33,13 @@ Esta es una API de ejemplo que utiliza Node.js, Express y Sequelize para gestion
 
 ### Entidades - Relaciones - Atributos 
 
-https://app.diagrams.net/?src=about
+
+utilizando la herraminta https://app.diagrams.net/?src=about
+
 
 ### Modelo Físico
 
-https://erd.dbdesigner.net/designer/schema/1696715970-trilerflix
+utilizando la herramienta https://erd.dbdesigner.net/designer/schema/1696715970-trilerflix
 
 
 
