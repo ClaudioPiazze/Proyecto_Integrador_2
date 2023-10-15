@@ -25,22 +25,23 @@ El _objetivo de este desarrollo_ es demostrar a través de un trabajo integrador
 
 Se crea un modelo relacional de la bb.dd. y las diferentes tablas, y luego exportar el código a .SQL para poder crear la bb.dd., tablas y relaciones.
 
-# API de Posts con Node.js, Express y Sequelize
+# API con Node.js, Express y Sequelize
 
 Esta es una API de ejemplo que utiliza Node.js, Express y Sequelize para gestionar posts, comentarios, usuarios, etiquetas y categorías. A continuación, encontrarás la documentación para utilizar esta API.
 
-## Modelo - Entidad - Relación
+### Modelo Entidades - Relaciones - Atributos 
 
-### Entidades - Relaciones - Atributos 
-
+![imagen Draw.IO_DER_TrilerFlix](./1_Draw.IO_DER_TrilerFlix.jpg)
 
 utilizando la herraminta https://app.diagrams.net/?src=about
 
-
 ### Modelo Físico
+
+![imagen DBDesigner_DER_TrilerFlix](./2_DBDesigner_DER_TrilerFlix.jpg)
 
 utilizando la herramienta https://erd.dbdesigner.net/designer/schema/1696715970-trilerflix
 
+![imagen TrilerFlix.png](./trilerflix.png)
 
 
 
