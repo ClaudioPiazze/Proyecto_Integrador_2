@@ -17,17 +17,13 @@ El _objetivo de este desarrollo_ es demostrar a través de un trabajo integrador
 	
 ## El proyecto incuye:
 1. El desarrollo de una bb.dd MySQL con el modelo relacional aplicado de acuerdo a la información almacenada en el archivo *Trailerflix.json*.
-   	-  catalogos (almacenar datos de películas y series)
-	-  categorias (serie, película, documental, etc...)
+   	-  catalogos (almacena datos de películas y series)
+	-  categorias (serie, película, etc...)
 	-  actores (datos de actrices y actores reparto)
-	-  genero (Acción, Drama, Terror, Comedia)
+	-  generos (Acción, Drama, Terror, Comedia)
 	-  2 tablas intermedias (catalogos_repartos, catalogos_actrores)
 
 Se crea un modelo relacional de la bb.dd. y las diferentes tablas, y luego exportar el código a .SQL para poder crear la bb.dd., tablas y relaciones.
-
-# API con Node.js, Express y Sequelize
-
-Esta es una API de ejemplo que utiliza Node.js, Express y Sequelize para gestionar posts, comentarios, usuarios, etiquetas y categorías. A continuación, encontrarás la documentación para utilizar esta API.
 
 ### Modelo Entidades - Relaciones - Atributos 
 
@@ -43,7 +39,13 @@ utilizando la herramienta https://erd.dbdesigner.net/designer/schema/1696715970-
 
 ![imagen TrilerFlix.png](./trilerflix.png)
 
+# API con Node.js, Express y Sequelize
 
+Esta es una API de ejemplo que utiliza Node.js, Express y Sequelize para gestionar categorías de peliculas/ series y visualizar el catalogo de peliculas segun diferentes criterios .
+
+Para la realizacion del SCRIPTS de inserción de datos en las diferentes tablas en MYSQL, utilice las herramienta de IA  CHAT-GPT que ayuda a crear los Insert segun los datos extraidos del archivo JSON.
+
+A continuación, encontrarás la documentación para utilizar esta API.
 
 ## Receta:
 Para poder hacer funcionar al proyecto debera realizar los siguiente _pasos_:
