@@ -17,14 +17,28 @@ El _objetivo de este desarrollo_ es demostrar a través de un trabajo integrador
 	
 ## El proyecto incuye:
 1. El desarrollo de una bb.dd MySQL con el modelo relacional aplicado de acuerdo a la información almacenada en el archivo *Trailerflix.json*.
-   
--  catalogos (almacenar datos de películas y series)
--  categorias (serie, película, documental, etc...)
--  actores (datos de actrices y actores reparto)
--  genero (Acción, Drama, Terror, Comedia)
--  2 tablas intermedias (catalogos_repartos, catalogos_actrores)
+   	-  catalogos (almacenar datos de películas y series)
+	-  categorias (serie, película, documental, etc...)
+	-  actores (datos de actrices y actores reparto)
+	-  genero (Acción, Drama, Terror, Comedia)
+	-  2 tablas intermedias (catalogos_repartos, catalogos_actrores)
 
 Se crea un modelo relacional de la bb.dd. y las diferentes tablas, y luego exportar el código a .SQL para poder crear la bb.dd., tablas y relaciones.
+
+# API de Posts con Node.js, Express y Sequelize
+
+Esta es una API de ejemplo que utiliza Node.js, Express y Sequelize para gestionar posts, comentarios, usuarios, etiquetas y categorías. A continuación, encontrarás la documentación para utilizar esta API.
+
+## Modelo - Entidad - Relación
+
+### Entidades - Relaciones - Atributos 
+
+https://app.diagrams.net/?src=about
+
+### Modelo Físico
+
+https://erd.dbdesigner.net/designer/schema/1696715970-trilerflix
+
 
 
 
@@ -32,16 +46,18 @@ Se crea un modelo relacional de la bb.dd. y las diferentes tablas, y luego expor
 Para poder hacer funcionar al proyecto debera realizar los siguiente _pasos_:
 
 ### - Desde cero
-1. Crear cluster.
-2. Mongodb compass --> Subir el json y armar la bbdd.
-3. VSCode --> Crear un proyecto.
+1. Abrir el Workbench 8.0 de MySQL
+2. Ejecutar el siguiente Script , creara la BBDD TrailerFlix en MYSQL.
+3. Mongodb compass --> Subir el json y armar la bbdd.
+4. VSCode --> Crear un proyecto.
 
 ### - Cuando descomprimis el archivo del proyecto .ZIP
 Por linea de comandos realizar los siguientes pasos:
 1. terminal --> **npm** init -y.
-2. terminal --> **npm** install express 
-3. terminal --> **npm** install mongodb
-4. terminal --> **npm** install dotenv
+2. terminal --> **npm** install express
+3. terminal --> **npm** install Sequelize
+4. terminal --> **npm** install mysql2
+5. terminal --> **npm** install dotenv
 
 ### - Para cuando inicias el proyecto
 1. Pegar esta linea en el package.json   "start": "node --watch server.js"
@@ -49,10 +65,6 @@ Por linea de comandos realizar los siguientes pasos:
 3. Probar en postman o thunder cada API
 
 ### - Para cuando vas a ejectuar el server.js
-
-1. Buscar la creación de la constante 'mibd' en la linea 7 del archivo 'server.js' y cambiar su contenido por el nombre de su base de datos
-2. En la linea 8 del mismo archivo esta la declaración de la constante 'micoll' la que debera ser modificada con el nombre que le asignara a su coleccion
-
 
 
 ## Canal Discord de la Diplomatura Chivilcoy Backend
