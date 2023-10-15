@@ -15,16 +15,16 @@ El _objetivo de este desarrollo_ es demostrar a través de un trabajo integrador
 |--------------|--------------|
 | TrailerFlix.json  | 🎦 Catalogo de Péliculas y Series   |
 	
-## El proyecto debe incluir:
-1. Desarrollo de una bb.dd MySQL con el modelo relacional aplicado de acuerdo a la información almacenada en trailerflix.json
+## El proyecto incuye:
+1. El desarrollo de una bb.dd MySQL con el modelo relacional aplicado de acuerdo a la información almacenada en el archivo *Trailerflix.json*.
    
-	a. catalogos (almacenar datos de películas y series)
-	b. categorias (serie, película, documental, etc...)
-	c. actores (datos de actrices y actores reparto)
-	d. genero (Acción, Drama, Terror, Comedia)
-	e. N tablas intermedias (catalogo_reparto, catalogo_actrores)
+-  catalogos (almacenar datos de películas y series)
+-  categorias (serie, película, documental, etc...)
+-  actores (datos de actrices y actores reparto)
+-  genero (Acción, Drama, Terror, Comedia)
+-  2 tablas intermedias (catalogos_repartos, catalogos_actrores)
 
-### Se crear el modelo relacional de la bb.dd. y las diferentes tablas, y luego exportar el código a .SQL para poder crear la bb.dd., tablas y relaciones.
+Se crea un modelo relacional de la bb.dd. y las diferentes tablas, y luego exportar el código a .SQL para poder crear la bb.dd., tablas y relaciones.
 
 
 
