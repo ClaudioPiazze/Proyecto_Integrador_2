@@ -56,7 +56,7 @@ Asegúrase de tener Node.js y MySQL instalados en tu sistema antes de ejecutar l
 
 ### - Desde la base de datos MySQL
 1. Abrir Workbench de MySQL
-2. Ejecutar el siguiente ![SCRIPT](./readme_data/3_Trilerflix_Creacion_BD_Tablas_V2.sql) , donde se creará la BB.DD. llamada 'TrailerFlix' con sus tablas, sus  relaciones y la inserción de los datos
+2. Ejecutar el siguiente [SCRIPT](./readme_data/3_Trilerflix_Creacion_BD_Tablas_V2.sql) , donde se creará la BB.DD. llamada 'TrailerFlix' con sus tablas, sus  relaciones y la inserción de los datos
 3. Al finalizar la ejecución podrá visualizar 
    todos los catálogos con los datos tal cual está en el JSON ejecutando el siguiente query: 
 
@@ -64,7 +64,7 @@ Asegúrase de tener Node.js y MySQL instalados en tu sistema antes de ejecutar l
    SELECT * FROM trailerflix.vista_catalogos;
 ```
 
-![imagen trailerflix.vista_catalogos.png](./trailerflix.vista_catalogos.png)
+![imagen trailerflix.vista_catalogos.png](./readme_data/trailerflix.vista_catalogos.png)
 ## - Desde Visual Studio Code
 ### Archivo `.env`
 
@@ -99,7 +99,7 @@ DB_PASSWORD=123456 (Ejemplo)
 - terminal --> **npm** install mysql2
  
 
-4. Inicia el servidor:
+4. Inicializa el servidor Express:
 
    ```bash
    npm start server.js
