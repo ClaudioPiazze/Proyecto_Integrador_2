@@ -328,11 +328,15 @@ A continuación, se detallan los endpoints disponibles y cómo utilizarlos:
 
 ```
 
-
 - **Respuesta Exitosa**:
   - **Código**: 200 OK
   - **Ejemplo de Respuesta**:
 
+  - **Ejemplo de Respuesta en tabla**:
+
+|id|poster|título|categoría|genero|resumen|temporadas|reparto|trailer|
+|----|----|----|----|----|----|----|----|----|
+|34|/posters/34.jpg|El primer hombre en la luna	|Película|Drama, Hechos verídicos	|Cuenta la historia de la misión de la NASA que llevó al primer hombre a la luna, centrada en Neil Armstrong (interpretado por Ryan Gosling) y el periodo comprendido entre los años 1961 y 1969. Un relato en primera persona, basado en la novela de James R. Hansen, que explora el sacrificio y el precio que representó, tanto para Armstrong como para Estados Unidos, una de las misiones más peligrosas de la historia.	|N/A	|Claire Fox, Corey Johnson, Jared Harris, Kunal Nayyar, Oscar Isaac, Rosie Perez	|
  ```json
  [
   {
