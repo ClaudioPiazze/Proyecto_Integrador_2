@@ -114,11 +114,9 @@ A continuación, se detallan los endpoints disponibles y cómo utilizarlos:
 
 ## ¿Como se compone la Creación, Lectura, Actualizacion y Borrado de una categoria? 
 
-CRUD con Control De Errores
-
 #### Listar todas las categorías
 
-- **URL**: `/categorias`
+- **URL**: `/categorias`  Ejemplo de URL Completo: 'http://localhost:3000/categorias'
 - **Método**: `GET`
 - **Respuesta Exitosa**:
   - **Código**: 200 OK
@@ -139,7 +137,7 @@ CRUD con Control De Errores
 
 #### Crear una nueva categoría
 
-- **URL**: `/categorias`
+- **URL**: `/categorias` Ejemplo de URL Completo: 'http://localhost:3000/categorias'
 - **Método**: `POST`
 - **Cuerpo de la Petición**:
 
@@ -162,7 +160,7 @@ CRUD con Control De Errores
 
 #### Actualizar una categoría por ID
 
-- **URL**: `/categorias/:id`
+- **URL**: `/categorias/:id` Ejemplo de URL Completo: 'http://localhost:3000/categorias/3'
 - **Método**: `PUT`
 - **:id**: `3`
 - **Cuerpo de la Petición**:
@@ -186,7 +184,7 @@ CRUD con Control De Errores
 
 #### Eliminar una categoría por ID
 
-- **URL**: `/categorias/:id`
+- **URL**: `/categorias/:id` Ejemplo de URL Completo: 'http://localhost:3000/categorias/3'
 - **Método**: `DELETE`
 - **Respuesta Exitosa**:
   - **Código**: 200 OK
@@ -202,7 +200,7 @@ CRUD con Control De Errores
 
 #### Obtener todos los datos del catálogo
 
-- **URL**: `/catalogos`
+- **URL**: `/catalogos`  Ejemplo de URL Completo: 'http://localhost:3000/catalogos'
 - **Método**: `GET`
 - **Respuesta Exitosa**:
   - **Código**: 200 OK
@@ -282,7 +280,7 @@ CRUD con Control De Errores
 
 #### Obtener datos del catálogo por número de ID
 
-- **URL**: `/catalogos/:id`
+- **URL**: `/catalogos/:id` Ejemplo de URL Completo: 'http://localhost:3000/catalogos/4'
 - **Método**: `GET`
 - **:id**: `4`
 - **Respuesta Exitosa**:
@@ -305,9 +303,32 @@ CRUD con Control De Errores
 
 #### Obtener datos de catálogo por Títulos (Puede ser una fracción del título)
 
-- **URL**: `/catalogos/titulo/:query`
+- **URL**: `/catalogos/titulo/:query` Ejemplo de URL Completo: 'http://localhost:3000/catalogos/titulo/luna'
 - **Método**: `GET`
 - **:query**: `luna`
+- **Código del endpoint en javaScript**:
+```javascript
+// Ruta para consultar el catalogo por Titulo/Nombre de la pelicula o serie
+  app.get('/catalogos/nombre/:query', async (req, res) => {
+    try {
+          const { query } = req.params;
+          const catalogo = await Catalogo.findAll({ 
+                where: { titulo: {
+                                [Op.like]: `%${ query }%` ,
+                                }, 
+                    }, 
+        });
+
+        !catalogo ? res.status(404).json({ error: 'Catálogo no encontrado' })
+                  : res.status(200).json(catalogo);
+    } catch (error) {
+          res.status(500).json({ error: 'Error en el servidor, al buscar catálogo por Título', description: error.message });
+    }
+});
+
+```
+
+
 - **Respuesta Exitosa**:
   - **Código**: 200 OK
   - **Ejemplo de Respuesta**:
@@ -330,7 +351,7 @@ CRUD con Control De Errores
 
 #### Obtener datos del catálogo por genero
 
-- **URL**: `/catalogos/genero/:query`
+- **URL**: `/catalogos/genero/:query` Ejemplo de URL Completo: 'http://localhost:3000/catalogos/genero/tecnologia'
 - **Método**: `GET`
 - **:query**: `tecnologia`
 - **Respuesta Exitosa**:
@@ -353,7 +374,9 @@ CRUD con Control De Errores
 ]
 ```
 
-- **URL**: `/catalogos/categoria/:query`
+#### Obtener datos del catálogo por categoría
+
+- **URL**: `/catalogos/categoria/:query` Ejemplo de URL Completo: 'http://localhost:3000/catalogos/categoria/pelicula'
 - **Método**: `GET`
 - **:query**: `pelicula`
 - **Respuesta Exitosa**:
